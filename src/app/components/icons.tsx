@@ -1,4 +1,4 @@
-export const GitHubIcon = ({ className = 'w-4 h-4 mr-2' }) => {
+export const GitHubIcon = ({ className = 'w-4 h-4 mr-2' }) => (
   <svg
     className={className}
     aria-hidden='true'
@@ -12,4 +12,4 @@ export const GitHubIcon = ({ className = 'w-4 h-4 mr-2' }) => {
       clipRule='evenodd'
     />
   </svg>
-}
+)
