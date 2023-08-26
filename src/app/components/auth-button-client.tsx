@@ -34,7 +34,9 @@ export function AuthButton ({ session }: { session: Session | null }) {
             Sign in with Github
             </button>
           : <button
-              onClick={handleSignOut}>
+              onClick={handleSignOut}
+              type='button'
+              className='text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-600 shadow-lg shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2'>
             Sign Out
             </button>
       }
