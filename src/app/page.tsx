@@ -13,7 +13,7 @@ export default async function Home () {
 
   const { data: posts } = await supabase
     .from('posts')
-    .select('*')
+    .select('*, users(name, avatar_url, user_name)')
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
